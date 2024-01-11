@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+        // let student = {
+        //     name: "Hariom",
+        //     age: 23,
+        //     address: "Mumbai, India",
+        // }
+
+        // // uddate / modify
+        // student.address = "Thane"
+
+        // console.log(student.rollNo);
+        
+        // // add / update 
+        // student.rollNo = 1
+
+        // console.log(student.name);
+
+        // console.log(student);
+
+        // // Array in Object
+        // let student = {
+        //     name: "Hariom",
+        //     age: 23,
+        //     address: ["Mumbai", "India"]
+        // }
+        // console.log(student.address);
+        // console.log(student.address[0]);
+        // console.log(student.address[1]);
+
+        // // write function in the object
+        // // 1st method / introduced in ES6
+        // let student = {
+        //     name: "Hariom",
+        //     age: 23,
+        //     address: "Mumbai, India",
+
+        //     // function test() {
+        //      test() {
+        //         console.log("hello world");
+        //     }
+        // }
+        // student.test()
+
+        // console.log(student);
+
+        // // 2nd method
+        // let student = {
+        //     name: "Hariom",
+        //     age: 23,
+        //     address: "Mumbai, India",
+
+        //     // function test() {
+        //     //     console.log("hello world");
+        //     // }
+
+        //     // function () {
+        //     //     console.log("hello world");
+        //     // }
+        //     // anonymous function method
+        //     profile: function() {
+        //         console.log("hello world");
+        //     }
+        // }
+        // student.profile()
+
+        // console.log(student);
+
+        // // this keyword
+        // let student = {
+        //     name: "Hariom",
+        //     age: 23,
+        //     address: "Mumbai, India",
+        // }
+
+        // // console.log(student.age);
+        // // console.log(`my name is ${student.name}, my age is ${student.age}`);
+        // console.log(`my name is ${this.name}, my age is ${this.age}`);
+
+        let list = {
+            mobile:6546365449,
+            email: "abc@email.com"
+        }
+
+        // console.log(list.age);
+        // console.log(list.email);
+
+        // console.log(`my mobile no. is ${list.mobile}, my email is ${list.email}`);
+
+        let student = {
+          name: "Hariom",
+          age: 23,
+          address: "Mumbai, India",
+
+          test() {
+                  console.log(
+                      `my name is ${this.name}, my age is ${this.age}, my mobile no. is ${list.mobile}, my email is ${list.email}`
+                  );
+              }
+          };
+        student.test();
+
+    </script>
+  </body>
+</html>

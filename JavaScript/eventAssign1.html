@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventAssign1.html</title>
+</head>
+<body>
+    <!-- 1st -->
+    <!-- <h1 id="abc">hello world</h1>   -->
+    <!-- <h1 id="abc" onkeydown="test()">hello world</h1>   -->
+
+    <!-- 2nd -->
+    <!-- <h1 id="abc">hello world</h1>   -->
+
+    <!-- 3rd way  -->
+    <h1 id="abc" onkeydown="test()">hello world</h1>  
+    
+    <script>
+        // 1st
+        // show pressed keyboard button in console 
+        // let abc = document.getElementById("abc")       
+
+        // document.addEventListener('keypress',  function (e) {
+        // document.addEventListener('keydown',  function (e) {
+        // window.addEventListener('keydown',  function (e) {
+        //     abc.style.color="red"
+        //     // document.write(`${e.key}`)
+        //     console.log(e.key);
+        // })
+
+        // 2nd
+        // let abc = document.getElementById("abc")
+        // window.addEventListener('keydown', function (e){
+        //     if (e.key == "CapsLock") {
+        //         abc.style.color="red"
+        //         abc.innerText = "this is capslock"         
+        //     } 
+        //     else if (e.key == "Shift"){
+        //         abc.style.color="green"
+        //         abc.innerText = "this is shift"  
+        //     }
+        //     else {
+        //         console.log(e.key);
+        //     }
+        // })
+
+        // 3rd way 
+        let abc = document.getElementById("abc")
+        function  test(e){
+            if (e.key == "CapsLock") {
+                abc.style.color="red"
+                abc.innerText = "this is capslock"         
+                console.log("this is capslock");
+            } 
+            else if (e.key == "Shift"){
+                abc.style.color="green"
+                abc.innerText = "this is shift"
+                console.log("this is capslock");
+            }
+            else {
+                console.log(e.key);
+            }
+        }
+        window.addEventListener('keydown', test)
+        
+    </script>
+</body>
+</html>

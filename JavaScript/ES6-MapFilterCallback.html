@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Map Filter Callback</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>ES6 Map Filter Callback</h2> -->
+
+    <div>
+      <span class="hour"></span>
+      <span class="min"></span>
+      <span class="sec"></span>
+      <span class="ampm"></span>
+    </div>
+
+    <script>
+      //   // clock
+      //   setInterval(function () {
+      //     let date = new Date();
+
+      //     let hour = date.getHours();
+      //     let min = date.getMinutes();
+      //     let sec = date.getSeconds();
+
+      //     // console.log(hour, min, sec);
+
+      //     let ampm;
+
+      //     ampm = hour < 12 ? "AM" : "PM";
+      //     hour = hour > 12 ? hour - 12 : hour;
+      //     hour = hour < 10 ? "0" + hour : hour;
+      //     sec = sec < 10 ? "0" + sec : sec;
+      //     min = min < 10 ? "0" + min : min;
+
+      //     document.querySelector(".hour").innerHTML = hour;
+      //     document.querySelector(".min").innerHTML = min;
+      //     document.querySelector(".sec").innerHTML = sec;
+      //     document.querySelector(".ampm").innerHTML = ampm;
+      //   }, 1000);
+
+      
+      // callback function
+      // function test(a,b,callback) {
+      //     const res = a+ b
+      //    callback(res)
+      // }
+      // function callback(res) {
+      //     console.log(res);
+      // }
+      // test(3,5,callback)
+
+
+      // function test(a,b,clbk) {
+      //     const add = a+ b
+      //     clbk(add)
+      // }
+      // function another(added) {
+      //     console.log(added);
+      // }
+      // test(4,6,another)
+
+    //   function test(a, b, Callback) {
+    //     const sum = a + b;
+    //     Callback(sum)
+    //   }
+    //   function another(result) {
+    //     console.log(result);
+    //   }
+    //   test(7, 8, another);
+
+    // map
+    
+    let arr1 = [1,2,3,4,5,6,7,8,9]
+
+    // arr1.map((val) => {
+    //     // console.log(val);
+    //     let res = val %= 0
+    //     console.log(res);
+    // })
+    // res.map()
+
+    arr1.map(function (val) {
+        // console.log(val);
+        let res = val %= 0
+        console.log(res);
+    })
+
+
+
+
+
+
+
+    // filter
+
+    </script>
+  </body>
+</html>

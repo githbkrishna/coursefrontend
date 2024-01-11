@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+
+    <script>
+        
+        // Object
+        // let obj = {
+        //     id:1,
+        //     fname: "Hariom",
+        //     lname: "Singh",
+        //     age:19
+        // }
+        // console.log(obj);
+
+        // JSON
+        // let jsonObj = {
+        //     "id":1,
+        //     "fname": "Hariom",
+        //     "lname": "Singh",
+        //     "age":19
+        // }
+        // console.log(jsonObj);
+        // console.log(typeof jsonObj);
+
+        // json methods
+        // 1st 
+        // JSON.stringify() = convert object to string 
+        // 1st way using interpolation / backticks
+        // let jsonString = `{
+        //     "id":1,
+        //     "fname": "Hariom",
+        //     "lname": "Singh",
+        //     "age":19
+        // }`
+
+        // console.log(jsonString);
+        // console.log(typeof jsonString);
+
+        // 2nd way 
+        // let jsonObj = {
+        //     "id":1,
+        //     "fname": "Hariom",
+        //     "lname": "Singh",
+        //     "age":19
+        // }
+
+        // let str = JSON.stringify(jsonObj)
+        // // converted to string 
+        // console.log(str);
+        // console.log(typeof str);
+
+        // json methods
+        // 2nd 
+        // JSON.parse() = convert string to object 
+
+        // let jsonStr = [
+        //     "id"=1,
+        //     "fname" = "Hariom",
+        //     "lname" = "Singh",
+        //     "age" = 19
+        // ]
+
+        let jsonStr = `{
+            "id":1,
+            "fname": "Hariom",
+            "lname": "Singh",
+            "age":19
+        }`
+ 
+        
+        console.log(typeof jsonStr);
+
+        let obj1 = JSON.parse(jsonStr)
+
+        console.log(obj1);
+        console.log(typeof obj1);
+
+    </script>
+
+</body>
+</html>

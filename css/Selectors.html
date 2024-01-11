@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* class */
+        /* .parent{
+            background-color: rgb(146, 138, 138);
+        } */
+
+        /* id */
+        /* #parent{
+            color: black;
+            background-color: #ddd;
+        } */
+
+        /* grouping(,) */
+        /* #list, h2, p{
+            color: red;
+        } */
+
+        /* dscending {space( )} */
+        /* div a{
+            background-color: red;
+        } */
+        /* div p{
+            background-color: rgb(178, 237, 0);
+        } */
+        /* a{
+            background-color: rgb(178, 237, 0);
+        } */
+
+
+        /* tilt (~) */
+        div~a{
+            color: red;
+        }
+
+        /* direct child(>) */
+        /* div>a{
+            color: red;
+        } */
+
+        /* attribute selectors(div ul li a) */
+        /* div ul a{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent">
+        <h2>hello world</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum magni maiores unde sed? Illo vero harum veritatis eos nisi laudantium nulla pariatur recusandae facilis assumenda sed ad provident earum, minima molestias eveniet id.</p>
+        
+        <ul id="list">
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello <a href="www.google.com">hello</a></li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello <a href="www.google.com">hello</a></li>
+            <li>hello</li>
+
+            <a href="www.xgoogle.com">hello</a> 
+        </ul>
+
+        <a href="www.google.com">hello</a> 
+        <a href="www.google.com">hello</a> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum magni maiores unde sed? Illo vero harum veritatis eos nisi laudantium nulla pariatur recusandae facilis assumenda sed ad provident earum, minima molestias eveniet id.</p>
+
+    </div>
+    <!-- <br> -->
+    
+    <h1> <a href="www.google.com">link </h1></a>
+    <a href="www.google.com">link</a>
+    <a href="www.google.com">link</a>
+    <a href="www.google.com">link</a>
+    <a href="www.google.com">link</a>
+    <a href="www.google.com">link</a>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto rerum mollitia soluta quasi. Non vitae deleniti quos deserunt molestiae, repellendus eligendi eius? Incidunt sint iusto, impedit maiores esse quis.   
+</p>
+</body>
+</html>

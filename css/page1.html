@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .video {
+        width: 100%;
+        height: 80vh;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        position: relative;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .navigation {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.041);
+        color: rgb(246, 246, 247);
+        position: absolute;
+        top: 0;
+        text-align: center;
+      }
+      .navigation ul {
+        display: inline-block;
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.548);
+      }
+      .navigation li {
+        list-style-type: none;
+        float: left;
+        padding: 50px;
+        object-fit: cover;
+        font-weight: 600;
+      }
+      .heading {
+        text-transform: uppercase;
+        /* padding-top: 200px; */
+        position: absolute;
+        bottom: 250px;
+        left: 40%;
+        font-weight: 900;
+      }
+
+      /* second section starts */
+
+      .image {
+        width: 100%;
+        height: 550px;
+        /* border: 2px solid red; */
+      }
+
+      .text {
+        height: 500px;
+        width: 50%;
+        /* margin-bottom: 15px; */
+        float: left;
+        padding: 20px;
+      }
+      .image img {
+        height: 400px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /* margin-bottom: 10px; */
+      }
+
+      /* third section starts */
+
+      /* .third{
+            border: 2px solid black;
+        } */
+      .third h1 {
+        color: rgb(8, 94, 134);
+        text-align: center;
+        font-size: 40px;
+      }
+      .pics li {
+        width: 30%;
+        height: 430px;
+        display: inline-block;
+        margin: 10px;
+        margin-left: 20px;
+      }
+      .pics img {
+        height: 300px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+
+      /* fourth section starts */
+
+      .last {
+        height: 200px;
+        width: 100%;
+        color: white;
+        background-color: rgb(18, 18, 53);
+        float: left;
+      }
+
+      .last img {
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+
+      .last ul {
+        width: 30%;
+      }
+
+      .last li {
+        float: left;
+        list-style-type: none;
+        padding: 5px;
+      }
+
+      .middle {
+        width: 30%;
+        /* background-color: rgb(30, 141, 104); */
+        position: relative;
+      }
+      .fa-cube {
+        font-size: 60px;
+      }
+      .hello {
+        position: absolute;
+        top: 17px;
+        left: 45px;
+      }
+      .end {
+        width: 30%;
+      }
+
+      .last {
+        position: relative;
+      }
+      .icons {
+        position: absolute;
+        top: 90px;
+        left: 30px;
+      }
+      .middle {
+        position: absolute;
+        left: 350px;
+        top: 60px;
+      }
+      .end {
+        position: absolute;
+        left: 700px;
+        top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video">
+      <video loop autoplay muted src="../video/temple.mp4"></video>
+      <div class="navigation">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+        <br />
+        <h1 class="heading">Where Next ?</h1>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="image">
+      <div class="text">
+        <img src="../image/ice.jpg" alt="" />
+        <h5 style="font-size: 10px">Lorem ipsum dolor sit amet.</h5>
+        <h2 style="letter-spacing: 5px">SURFING</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+          excepturi est consequatur omnis suscipit laborum doloremque, provident
+          atque magni, ab obcaecati sunt?
+        </p>
+      </div>
+      <div class="text" style="text-align: center">
+        <h5 style="font-size: 10px">Lorem ipsum dolor sit amet.</h5>
+        <h2 style="letter-spacing: 5px">ADVENTURE</h2>
+        <p style="padding-bottom: 10px">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+          excepturi est consequatur omnis suscipit laborum doloremque, provident
+          atque magni, ab obcaecati sunt?
+        </p>
+        <img src="../image/beach.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="third">
+      <h1>Discover</h1>
+      <p style="text-align: center; font-size: 10px">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <div class="pics">
+        <li>
+          <img src="../image/ice.jpg" alt="" />
+          <h2>SURFING</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            excepturi est consequatur omnis suscipit laborum doloremque,
+            provident atque magni, ab obcaecati sunt?
+          </p>
+        </li>
+        <li>
+          <img src="../image/field.jpg" alt="" />
+          <h2>SURFING</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            excepturi est consequatur omnis suscipit laborum doloremque,
+            provident atque magni, ab obcaecati sunt?
+          </p>
+        </li>
+        <li>
+          <img src="../image/beach.jpg" alt="" />
+          <h2>SURFING</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            excepturi est consequatur omnis suscipit laborum doloremque,
+            provident atque magni, ab obcaecati sunt?
+          </p>
+        </li>
+      </div>
+    </div>
+
+    <div class="last">
+      <img src="../image/diving.jpg" alt="" />
+      <ul class="icons">
+        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-solid fa-music"></i></li>
+      </ul>
+
+      <br />
+
+      <div class="middle">
+        <i class="fa-duotone fa-cube"></i>
+        <div class="hello">
+          <span class="one">CUBE</span>
+          <br />
+          <span class="two">SQUARE</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <br />
+
+      <div class="end">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim officia
+          iste in dolorum et, inventore explicabo reprehenderit nulla, id
+          deserunt temporibus assumenda.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

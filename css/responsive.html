@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2vw;
+        height: 50px;
+        border-bottom: 2px solid black;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      li {
+        padding: 0 2vw;
+        list-style: none;
+      }
+      nav a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>Navbar</h2>
+      </div>
+      <div>
+        <ul>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">=</label>
+
+          <li>
+            <ul class="navbar">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Review</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        
+      </div>
+    </nav>
+
+    <section>
+        <div class="left">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure beatae nihil incidunt explicabo vel, tempora minima veniam dolor, praesentium nemo officiis?</p>
+            <button>Click</button>
+        </div>
+        <div class="right">
+            
+        </div>
+    </section>
+
+  </body>
+</html>

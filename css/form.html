@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: rgb(65, 112, 78);
+        }
+        form{
+            width: 500px;
+            height: 470px;
+            color: white;
+            background-color: rgba(16, 64, 168, 0.636);
+            border-radius: 10%;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            gap: 20px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        span{
+            color: rgb(252, 223, 0);
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            margin:0 50px;
+        }
+        textarea{
+            vertical-align:text-top;
+        }
+        .submit{
+            font-size: 15px;
+            padding:7px 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Contact <span>Us</span></h1>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" placeholder="enter first name" size="15px">
+        <br>
+        <br>
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" placeholder="enter last name" size="15px">
+        <br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="enter email" size="15px">
+        <br>
+        <br>
+        <label for="dob">Email :</label>
+        <input type="date" id="dob" size="15px">
+        <br>
+        <br>
+        <label for="textarea">Details</label>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" class="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transition: all 3s;
+            perspective: 500px;
+            /* background-color: red; */
+        }
+        .show{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: all 3s;
+            transform: rotateY(0deg);
+        }
+        .show img{
+            width: 100%;
+            height: 100%;
+        }
+        .hide{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgba(16, 14, 14, 0.395);
+            position: absolute;
+            transition: all 3s;
+            top: 0;
+            transform: rotateY(-90deg);
+        }
+        .main:hover .show{
+            transform: rotateY(90deg);
+        }
+        .main:hover .hide{
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="show">
+            <img src="../image/field.jpg" alt="">
+        </div>
+
+        <div class="hide">
+            <h2>hello</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique hic quas repellat doloribus! Quaerat rem aspernatur, ab praesentium repudiandae tempora aperiam, eveniet accusamus libero saepe asperiores quis alias voluptate.</p>
+        </div>
+
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: blue;
+            position: relative;
+            perspective: 300px;
+        }
+        .show{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .hide{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: #dddddd96;
+            transform: rotateY(90deg);
+        }
+        .main:hover .hide{
+            transform: rotateY(0deg);
+            transition: all 3s;
+        }
+        .main:hover .show{
+            transform: rotateY(-90deg);
+            transition: all 3s;
+        }
+
+
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="show">
+            <img src="../image/beach.jpg" alt="">
+        </div>
+
+        <div class="hide">
+            <h3>hello</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ipsum fugiat voluptatum rem doloremque ullam assumenda voluptates eum vel explicabo ex suscipit natus, deleniti reprehenderit, nobis amet blanditiis! Quia, quis.</p>
+        </div>
+     </div>
+</body>
+</html>

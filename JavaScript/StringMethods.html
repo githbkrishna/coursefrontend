@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+
+        // String.length
+
+        // let text = 'Radhe Krishna'
+        // // let text = 'Radhe, Krishna'
+        // console.log(text.length);
+
+        // escape character 
+        // let text = "Radhe 'Krishna' Hare"
+        // let text = 'Radhe "Krishna" Hare'
+        // console.log(text);
+
+        // backslash escape character
+        // let text = "Radhe \'krishna\' hare"  // single quote
+        //  //js ignore backslash "\"
+        // let text = "Radhe \"krishna\" hare"  // double quote
+        // console.log(text);
+
+        // let text = "Radhe \\ krishna"
+        // // if you want backslash then you have to write it twice bcoz first will be ignored by javascript
+        // console.log(text);
+
+        // JavaScript String Length
+        // let text = "Welcome to India my friend, friend"
+
+        // console.log(text.length);
+        // console.log(text[3]);
+        // console.log(text[23]);
+
+        // slice(start, end)
+        // console.log(text.slice(11,23));
+        // console.log(text.slice(11,17));
+        // console.log(text.slice(-1))
+        // console.log(text.slice(-1,-1))
+        // console.log(text.slice(-1,-5))
+        // console.log(text.slice(-3,-1))
+        // console.log(text.slice(-5,-2))
+        // console.log(text.slice(-13,-3))
+
+        // substring(start, end)   
+        // console.log(text.substring(2))
+        // console.log(text.substring(5))
+        // console.log(text.substring(1,1))
+        // console.log(text.substring(1,2))
+        // console.log(text.substring(1,3))
+        // console.log(text.substring(1,4))
+        // console.log(text.substring(1,5))
+        // console.log(text.substring(5,0))
+        // console.log(text.substring(5,1))
+        // console.log(text.substring(5,2))
+        // console.log(text.substring(5,3))
+        // console.log(text.substring(5,4))
+        // console.log(text.substring(5,5))
+
+        // substr()
+        // console.log(text.substr(1)) 
+        // console.log(text.substr(2)) 
+        // console.log(text.substr(3)) 
+        // console.log(text.substr(3,0))  
+        // console.log(text.substr(3,1))  
+        // console.log(text.substr(3,2))  
+        // console.log(text.substr(3,3))  
+        // console.log(text.substr(3,4))  
+        // console.log(text.substr(3,5))  
+
+        // replace() , replaceAll()
+        // console.log(text.replace("India","Bharat"))
+        // console.log(text.replaceAll("friend","Mitra"));
+
+        // toLowerCase() , toUpperCase()
+        // console.log(text.toLowerCase());
+        // console.log(text.toUpperCase());
+
+        // console.log(text);
+
+        // concat 
+        // let a = "welcome to "
+        // let b = "India My Friend"
+        
+        // // console.log(a.concat(b))
+
+        // let c = a.concat(b)
+        // console.log(c);
+
+        // trim()
+        // let text = "  Welcome to India my friend  ";
+        // console.log(text);
+        // console.log(text.trim());
+
+        // charAt()
+        // let text = "Welcome to India my friend"
+
+        // console.log(text.charAt(0));
+        // console.log(text.charAt(1));
+        // console.log(text.charAt(2));
+        // console.log(text.charAt(3));
+
+        // charCodeAt() is a unique code for every character
+        // console.log(text.charCodeAt(0));
+        // console.log(text.charCodeAt(1));
+        // console.log(text.charCodeAt(2));
+
+        // Converting a String to an Array
+        // split()
+        // console.log(text.split(""));
+        // console.log(text.split("3"));
+        // console.log(text.split("e"));
+        // console.log(text.split("w"));
+        // console.log(text.split("l"));
+        // console.log(text.split("o"));
+
+        // Search Methods In Strings
+        // indexOf()
+        // console.log(text.indexOf("I"));
+        // console.log(text.indexOf("i"));
+
+        // lastIndexOf
+        // console.log(text.lastIndexOf("1"));
+        // console.log(text.lastIndexOf("e"));
+        // console.log(text.lastIndexOf("o"));
+        // console.log(text.lastIndexOf("India"));
+
+        // search
+        // console.log(text.search("to"));
+
+        // includes()
+        // console.log(text.includes("india"));
+        // console.log(text.includes("India"));
+        // console.log(text.includes("India",2));
+        // console.log(text.includes("India",11));
+
+        // let text = "Welcome to India my friend"
+        
+        // startsWith()
+        // console.log(text.startsWith("India"));
+        
+        // console.log(text.startsWith("India",5));
+        // console.log(text.startsWith("India",11));
+        // console.log(text.startsWith("India",12));
+        
+        // endsWith()
+        // console.log(text.endsWith("India"));
+        // console.log(text.endsWith("friend"));
+        // console.log(text.endsWith("friend",26));
+        
+        // let age = 23
+        // let marks = 80
+        
+        // Back-Tics Syntax
+        // console.log(`My age is ${age}, my marks is ${marks}`);
+        
+        // // Quotes Inside Strings
+        // console.log(`Welcome to "India" my friend`);
+        
+        // let text1 = "Welcome to India my friend"
+        // let text2 = "my friend"
+        // // Interpolation
+        // console.log(`${text1} ${text2}`);
+
+    </script>
+</body>
+</html>

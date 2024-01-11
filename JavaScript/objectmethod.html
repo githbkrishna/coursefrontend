@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method / OTP verification</title>
+</head>
+<body>
+    <button onclick="test()">click</button>
+
+    <script>
+
+        // // returns Euler's number
+        // // let abc = Math.E
+        // // console.log(abc);
+        // console.log(Math.E);        
+
+
+        // // returns PI
+        // console.log(Math.PI );
+        
+
+        // // Math.round()
+        // // let a =  2.3
+        // // let a =  2.5
+        // // let a =  2.9
+        // // let b = Math.round(a)
+        // // console.log(b);
+
+        // console.log(Math.round(2.3));
+        // console.log(Math.round(2.5));
+        // console.log(Math.round(2.9));
+
+        // // Math.ceil()
+        // console.log(Math.ceil(2.3));
+        // console.log(Math.ceil(2.9));
+        // console.log(Math.ceil(3.9));
+        
+        // // Math.floor()
+        // console.log(Math.floor(2.3));
+        // console.log(Math.floor(2.5));
+        // console.log(Math.floor(2.9));
+        // console.log(Math.floor(3.9));
+        
+        // // comes with ES6 
+        // // Math.trunc() // similer to Math.floor()
+        // console.log(Math.trunc(2.3));
+        // console.log(Math.trunc(2.9));
+        // console.log(Math.trunc(3.3));
+
+        // // comes with ES6 
+        // // Math.sign()
+        // console.log(Math.sign(1));
+        // console.log(Math.sign(123));
+        // console.log(Math.sign(-1));
+        // console.log(Math.sign(-123));
+        // console.log(Math.sign(0));
+
+        // // Math.pow()
+        // console.log(Math.pow(2,3));
+        // console.log(Math.pow(9,3));
+        // console.log(Math.pow(3,10));
+
+        // // Math.sqrt()
+        // console.log(Math.sqrt(64));
+        // console.log(Math.sqrt(27));
+        // console.log(Math.sqrt(100));
+
+        // // Math.abs()   // like mod ||
+        // console.log(Math.abs(-64));
+        // console.log(Math.abs(23));
+        
+        // // Math.min() and Math.max()
+        // // let num = Math.min(5,38,7,82);
+        // let num = Math.max(5,38,7,82);
+        // console.log(num);
+
+        // // Math.random()
+        // // let num = Math.random();
+       	// // console.log(num);
+        // console.log(Math.random());
+        // console.log(Math.random()*10);
+        // console.log(Math.floor(Math.random()*10));
+
+        // let num = Math.floor(Math.random() * (max-min)+min) )
+     	// let num = Math.floor(Math.random() * (25-15)+15) ;  
+     	// let num = Math.floor(Math.random() * 10+15) ;  
+        // console.log(num);
+
+        // // A Proper Random Function
+        // function test(max,min) {
+        //     console.log(Math.floor(Math.random()* (50-20)+20));
+        // }
+
+
+        // function test(max,min) {
+        //     console.log(Math.floor(Math.random()* (50-20)+20));
+        // }
+        // test(50,20)
+
+        // function getrandomnumber(min, max) {
+        //   	let num = Math.floor(Math.random() * (max - min) + min);
+        //     return (num);
+      	// }
+        // console.log(getrandomnumber(10, 30));
+
+        // // otp verification
+        // function test() {
+        //     let otp = Math.floor(Math.random()* 9000 + 1000)
+        //     // return (otp);
+
+        //     console.log(`your otp is ${otp}`);
+
+        //     let check = prompt("enter your otp")
+            
+        //     if (check == otp) {
+        //         alert("otp verification successfully");
+        //     } 
+        //     else if(check.length != 4){
+        //         alert("pls enter 4 digit otp");
+        //     }
+        //     else {
+        //         alert("otp verification failed");
+        //     }
+        // }
+
+        function test() {
+            let otp = Math.floor(Math.random()* 9000 + 1000)
+            console.log(`your otp is ${otp}`);
+
+            let check= prompt("Please enter the OTP");
+
+            if (check == otp) {
+                alert("OTP verified Successfully")
+            } 
+            else if(check.length != 4){
+                alert("Please enter 4 digit OTP !")
+            }
+            else {
+                alert("OTP verification failed")
+            }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "students": [
+        {
+            "fname":"Hariom",
+            "lname":"Singh",
+            "age":25
+        },
+        {
+            "fname":"Ram",
+            "lname":"Singh",
+            "age":20
+        }
+    ],
+    
+    "name":[
+        {
+            "fname":"Hariom",
+            "lname":"Singh",
+            "age":25
+        },
+        {
+            "fname":"Ram",
+            "lname":"Singh",
+            "age":20
+        }
+    ]
+}

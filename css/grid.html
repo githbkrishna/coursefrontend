@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            background-color: darkgoldenrod;
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 200px 200px;
+            gap: 20px 40px;
+            justify-content: center;
+            /* align-content: center; */
+        }
+        .first{
+            background-color: #ddd;
+        }
+        h3{
+            padding:20px 0 20px 0;
+        }
+        i{
+            font-size: 50px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Our Website</h1>
+        <div class="main">
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="first">
+                <i class="fa-solid fa-house"></i>
+                <h3>website</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .grids {
+        height: 550px;
+        width: 100%;
+        background-color: #ddd;
+      }
+
+      .grids .heading {
+        width: 100%;
+        text-align: center;
+        position: relative;
+      }
+
+      .grids .heading h2::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 10%;
+        border-radius: 20px;
+        background-color: black;
+        position: absolute;
+        left: 45%;
+      }
+
+      .grids .grid {
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        /* grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 200px 200px;
+        gap: 30px;
+        justify-content: center;
+        align-content: center; */
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 300px 300px 300px;
+        gap: 20px;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: rgb(52, 52, 121);
+      }
+
+      .grids .grid .first {
+        background-color: rgb(172, 172, 235);
+        border: 2px solid black;
+        text-align: center;
+      }
+      .first i {
+        font-size: 50px;
+        padding-top: 20px;
+      }
+      .first h3 {
+        padding: 20px 0 20px 0;
+      }
+
+      @media screen and (max-width:400px) {
+        .grids{
+            height: auto;
+        }
+        .grids .grid{
+            grid-template-columns: 90%;
+            grid-template-rows: 300px 300px 200px 200px 300px 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grids">
+      <div class="heading">
+        <h2>Our <span style="color: red">Website</span></h2>
+      </div>
+
+      <div class="grid">
+        <div class="first">
+          <i class="fa-solid fa-house"></i>
+          <h3>Home</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first">
+          <i class="fa-brands fa-twitter"></i>
+          <h3>twitter</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first">
+          <i class="fa-brands fa-facebook"></i>
+          <h3>facebook</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first">
+          <i class="fa-brands fa-tiktok"></i>
+          <h3>tiktok</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first">
+          <i class="fa-brands fa-linkedin"></i>
+          <h3>linkedin</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first">
+          <i class="fa-solid fa-bars"></i>
+          <h3>bars</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

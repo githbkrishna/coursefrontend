@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1 selectors</title>
+</head>
+<body>
+
+    <h1 class="b">first h1</h1>
+    <h1 class="b">second h1</h1>
+    <h1 class="c">third h1</h1>
+    <h5>bye</h5>
+    
+    <h1 id="one">hello</h1>
+    <h2 class="a">hello js</h2>
+    <h3 class="a">hello react</h3>
+    
+    <button onclick="test()">click</button>
+    
+    <div class="div" id="div">
+        <h1 class="b">hello inside div</h1>
+        <h5 id="a">hyy inside div</h5>
+    </div>
+    
+    <script>
+        // selectors
+
+        // // getElementById
+        // let idd = document.getElementById("a").innerHTML="byee"
+        // // let idd = document.getElementById("a")
+        // a.innerHTML="byeee"
+        // // console.log(idd);
+
+
+        // let next = document.getElementsByClassName("a")
+        // for (let i = 0; i < a.length; i++) {
+        //     // console.log(text);
+        //     next[i].innerHTML = "byyyyyyy"           
+        // }
+        // console.log(next[0]);
+
+        // let next = document.getElementsByClassName("a");
+        // for(let i = 0 ; i< next.length ; i++){
+        //     next[i].innerHTML="bye js"
+        // }
+        // console.log(next[1])
+
+
+        // // getElementsByClassName
+        // let cls = document.getElementsByClassName("b")
+        // b[1].innerHTML = "hell0000"
+        // console.log(cls);
+
+
+        // // getElementsByTagName
+        // let tag = document.getElementsByTagName("h1")
+        // let tag = document.getElementsByTagName("h1.b")
+        // console.log(tag);
+
+        // To select specific elemnts in div 
+
+        // let divvv = document.getElementById(".div")
+        // let dome = div.getElementsByTagName("h1");
+        // for(let i = 0 ; i< dome.length ; i++){
+        // dome[i].innerHTML="hello Tagname"
+        // }
+        // console.log(dome)
+        
+        // // To return only the first matches
+        // let test = document.querySelector("h1.b")
+        // test.innerHTML="hy console"
+        // console.log(test);
+        
+        // To return all matches (not only the first) 
+        // It will give NodeList
+        // let text = document.querySelectorAll("h1.b")
+        // // text.innerHTML="hy console 2"
+        // text[0].innerHTML="hy console 2"
+        // text[1].innerHTML="hy console 2"
+        // text[2].innerHTML="hy console 2"
+        // console.log(text);
+
+        // Use Loop for multiple Array to set the changes
+        // let text = document.querySelectorAll("h1.b")
+        // for(let i = 0; i<text.length;i++){
+        // text[i].innerHTML="hy console 2"
+        // }
+        // console.log(text);
+
+    </script>
+</body>
+</html>

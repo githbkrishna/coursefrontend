@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body {
+        background-color: #8bb6df;
+      } */
+      section {
+        width: 100%;
+        height: 50vh;
+        /* background-color: ; */
+        background-color: rgb(6, 82, 153);
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        padding: 10vw 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        font-size: 8vw;
+        padding: 1vw;
+        text-align: center;
+        background-color: rgb(23, 23, 110);
+        color: white;
+      }
+      span {
+        display: block;
+      }
+      .buttons {
+        text-align: center;
+      }
+      button {
+        padding: 1vw 2vw;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="box"><span class="hr">00</span>hr</div>
+        <div class="box"><span class="min">00</span>min</div>
+        <div class="box"><span class="sec">00</span>sec</div>
+        <div class="box"><span class="ms">00</span>ms</div>
+      </div>
+
+      <div class="buttons">
+        <button id="startbtn" onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="reset()">reset</button>
+      </div>
+    </section>
+
+    <script>
+      // let hr = 0;
+      // let min = 0;
+      // let sec = 0;
+      // let ms = 0;
+
+      // let time = false;
+
+      // function start() {
+      //   time = true;
+      //   // console.log("start");
+
+      //   stopwatch();
+      // }
+
+      // function stop() {
+      //   time = false;
+
+      //   document.getElementById("startbtn").disabled = true;
+      // }
+
+      // function reset() {
+      //   time = false;
+
+      //   document.getElementById("startbtn").disabled = false;
+
+      //   document.querySelector(".hr").innerHTML = "00";
+      //   document.querySelector(".min").innerHTML = "00";
+      //   document.querySelector(".sec").innerHTML = "00";
+      //   document.querySelector(".ms").innerHTML = "00";
+      // }
+
+      // function stopwatch() {
+      //   if (time == true) {
+      //     ms = ms + 1;
+      //     // console.log('ms');
+      //     // console.log(ms);
+
+      //     if (ms == 100) {
+      //       sec = sec + 1;
+      //       ms = 0;
+      //     }
+
+      //     if (sec == 59) {
+      //       min = min + 1;
+      //       ms = 0;
+      //       sec = 0;
+      //     }
+
+      //     if (min == 59) {
+      //       hr = hr + 1;
+      //       ms = 0;
+      //       sec = 0;
+      //       min = 0;
+      //     }
+
+      //     setTimeout(stopwatch, 10);
+
+      //     document.querySelector(".hr").innerHTML = hr;
+      //     document.querySelector(".min").innerHTML = min;
+      //     document.querySelector(".sec").innerHTML = sec;
+      //     document.querySelector(".ms").innerHTML = ms;
+      //   }
+      // }
+
+      let hr = 0;
+      let min = 0;
+      let sec = 0;
+      let ms = 0;
+
+      let time = false;
+
+      function start() {
+        time = true;
+
+        stopWatch();
+
+        document.querySelector("#startbtn").disabled = true;
+      }
+      function stop() {
+        time = false;
+
+        document.querySelector("#startbtn").disabled = false;
+      }
+      function reset() {
+        
+        time = false;
+
+        ms = 0
+        sec = 0
+        min = 0
+        hr = 0
+
+        document.querySelector(".ms").innerHTML = "00";
+        document.querySelector(".sec").innerHTML = "00";
+        document.querySelector(".min").innerHTML = "00";
+        document.querySelector(".hr").innerHTML = "00";
+        
+        document.querySelector("#startbtn").disabled = false;
+      }
+
+      function stopWatch(params) {
+        if (time == true) {
+          ms = ms + 1;
+          // console.log(ms);
+
+          if (ms == 100) {
+            sec = sec + 1;
+            ms = 0;
+          }
+          if (sec == 59) {
+            min = min + 1;
+            sec = 0;
+            ms = 0;
+          }
+          if (min == 59) {
+            hr = hr + 1;
+            min = 0;
+            sec = 0;
+            ms = 0;
+          }
+
+          setTimeout(stopWatch, 10);
+
+          document.querySelector(".ms").innerHTML = ms;
+          document.querySelector(".sec").innerHTML = sec;
+          document.querySelector(".min").innerHTML = min;
+          document.querySelector(".hr").innerHTML = hr;
+        }
+      }
+    </script>
+  </body>
+</html>

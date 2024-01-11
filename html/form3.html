@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .a {
+        border: 2px solid black;
+      }
+      .up {
+        text-align: center;
+        background-color: rgb(204, 106, 106);
+        padding: 10px 10px;
+      }
+      .up label {
+        font-size: larger;
+      }
+      .up label span {
+        color: rgb(131, 9, 9);
+      }
+      form {
+        background-color: darkgray;
+        /* text-align: center; */
+        padding: 10px 20px;
+      }
+      form label{
+        margin-right: 50px;
+      }
+      ::placeholder {
+        text-align: center;
+      }
+      .in{
+        background-color: aquamarine;
+        text-align: center;
+        padding: 10px;
+      }
+      span{
+        color: red;
+      }
+      .btn{
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <div class="up">
+        <label>Leave <span>Form</span></label>
+        <select name="" id="">
+          <option value="full"></option>
+          <option value="half"></option>
+          <option value="zero"></option>
+        </select>
+      </div>
+      <form action="">
+        <label for="">Your E-mail :</label>
+        <input type="email" placeholder="E-mail" />
+        <br /><br />
+
+        <label for="">Your ID :</label>
+        <input type="number" placeholder="ID" />
+        <br /><br />
+
+        <label for="fname">Your Name :</label>
+        <input type="text" name="fname" id="fname" placeholder="Name" />
+        <br /><br />
+
+        <label for="position">Your Position :</label>
+        <input
+          type="text"
+          name="position"
+          id="position"
+          placeholder="Position"
+        />
+        <br /><br />
+
+        <label for="">Leave type <span>*</span> :</label>
+        <select name="" id="">
+          <option value="full">--select--</option>
+          <option value="full">full</option>
+          <option value="half">half</option>
+          <option value="zero">zero</option>
+        </select>
+        <br /><br />
+
+        <label for="email">From <span>*</span> :</label>
+        <input type="date" />
+        <br /><br />
+        <label for="email">To <span>*</span> :</label>
+        <input type="date" />
+        <br /><br />
+        <label for="email">No. of Days :</label>
+        <input type="text" placeholder="Days" />
+        <br /><br />
+
+        <label id="textarea" style="vertical-align: text-top;" for="textarea">Write Something...</label>
+        <textarea style="vertical-align: text-top;"
+          name=""
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="lets write.."
+        ></textarea>
+        <br /><br />
+        </form>
+        <div class="in">
+          <input class="btn" type="submit" />
+          <input type="reset" />
+        </div>
+    </div>
+    
+  </body>
+</html>

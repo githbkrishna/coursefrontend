@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            margin-top: 50px;
+            margin-left: 300px;
+        }
+        fieldset{
+            height: 500px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+        legend{
+            text-align: center;
+            color: blue;
+            background-color: rgb(215, 214, 217);
+        }
+        .fname{
+            color: red;
+        }
+        .lname{
+            color: blueviolet;
+        }
+        ::placeholder{
+            color: aqua;
+        }
+        .gender{
+            color: aliceblue;
+            background-color: cadetblue;
+        }
+        button{
+            color: azure;
+            background-color: brown;
+        }
+        /* div{
+            padding-left: 160px;
+            padding-top: -70px;
+        } */
+
+    </style>
+</head>
+<body>
+    <form action="jshtml.html" method="get" autocomplete="off">
+    <!-- <form action="">  -->
+        <!-- there is always backend file in form's action -->
+        <!-- get methode used for fetching the data from the backend and then display it on the page, while post method is used to post/send the data to the any backend file -->
+
+        <fieldset><!-- this is border of form -->
+        <legend>My Form</legend><!-- it will display on the top of the form border -->
+
+        <label class="fname" for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="enter your fname"><br><br>
+        <!-- "for & id" is used to identify that the input is of which label -->
+        <!-- "name" is use for backend -->
+     
+        <label class="lname" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="enter your lname"><br><br>
+
+        <label class="gender">Gender</label>
+        <input type="radio" name="Gender" value="Male"> 
+        <label for="">Male</label>
+
+        <input type="radio" name="Gender" value="Female"> 
+        <label for="">Female</label>
+
+        <input type="radio" name="Gender" value="Others"> 
+        <label for="">Others</label> <br><br>
+        <!-- value is used for all radio buttons  -->
+        <!-- name is used to select only one radio button on the form -->
+
+        <!-- <label for="">Skills</label> -->
+        <label for="skill">Skills</label>
+        <input type="checkbox" name="skill" value="html">
+        <label for="">html</label>
+
+        <input type="checkbox" name="skill" value="css">
+        <label for="">css</label>
+
+        <input type="checkbox" name="skill" value="js">
+        <label for="">js</label> <br><br>
+
+        <label>State</label> 
+        <select name="state"> 
+            <option value="UP">UP</option>
+            <option value="MP">MP</option>
+            <option value="GJ">GJ</option>
+        </select> <br><br>
+
+        <label for="">DOB</label>
+        <input name="date" type="date"> <br><br>
+
+        <textarea placeholder="enter something" name="" id="" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <ul>
+            <li>
+                <input type="submit" value="Go"> <!-- this is exclusively for form  -->
+                <button>submit</button>
+                <input type="reset">
+                <div><input style="width: 20px; height: 20px;" type="image" src="./image/m.jpg"></div>        
+            </li>
+        </ul>
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    
+    <script>
+
+        // for loop 
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        // }
+
+        // while loop
+        // let i = 4
+        // while (i >=4 ) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // let i = 1 ;
+        // while(i<=5){
+        //     document.write(i + '<br>')
+        //     console.log(i);
+        //     i++;
+        // }
+        // document.write("process Done")
+
+        // do while loop 
+        // let i = i
+        // do {
+        //     console.log(i);
+        //     i++
+        // } while (i>=5);
+
+        // 1-10 squar
+        // for (let i = 0; i <= 10; i++) {
+        //     console.log(i*i);
+            
+        // }
+
+        // even, odd 
+        // for(let i = 0; i<=10; i++){
+        //     if(i==0){
+        //         console.log(i + " not number");
+        //     }
+        //     else if (i%2 == 0) {
+        //         console.log(i + " even no");
+        //     } 
+        //     else {
+        //         console.log(i + " odd no");
+        //     }
+        // }
+
+        // table
+        // let num = 20
+        // for(let i = 1; i<=10; i++){
+        //     console.log(num +'x' + i + '=' + num*i)
+        // }
+
+        // for in loop => used for object
+        // let person = {
+        //     fname:"Radhe",
+        //     lname:"krishna",
+        //     address:"mumbai"
+        // }
+        // for (let a in person) {
+        //     // console.log(a);
+        //     console.log(person[a]);
+        // }
+
+        // for of loop =>  used for array
+        // let arr = [1,2,3,4,5]
+        // // let arr = ["html", "css", "js"]
+        // for (let a of arr) {
+        //     console.log(arr[4]);
+        // }
+
+        // prime no. 
+        // let num = 5
+        // if(num<=1){
+        //     console.log(num + " is not a prime no.");
+        // }
+        // else if(num==2){
+        //     console.log(num + " is a prime no.");
+        // }
+        // else{
+        //     for(let i = 2; i<num; i++){
+        //         if(num % i ==0){
+        //             var result = (num + " is not a prime no.")
+        //             break;
+        //         }
+        //         else{
+        //             var result = (num + " is a prime no.")
+        //         }
+        //     }
+        //     console.log(result);
+        // }
+            
+        let num = 5
+        if(num<=1){
+            console.log(num + " is not a prime no.");
+        }
+        else if(num==2){
+            console.log(num + " is a prime no.");
+        }
+        else{
+            for(let i = 2; i<num; i++){
+                if(num % i ==0){
+                    var result = (num + " is not a prime no.")
+                    break;
+                }
+                else{
+                    var result = (num + " is a prime no.")
+                }
+            }
+            console.log(result);
+        }
+
+    </script>
+
+</body>
+</html>

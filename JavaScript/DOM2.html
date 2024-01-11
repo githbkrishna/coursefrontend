@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2 Travesing Elemnts</title>
+</head>
+<body>
+    <ul class="a">
+        <li id="trav">a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ul>
+    <!-- <ul class="b">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul> -->
+
+    <script>
+        // Travesing Elemnts
+
+        // child to parent travel
+        // let childd = document.getElementById("trav")
+        // let parenttt = childd.parentElement
+        // console.log(parenttt);
+
+        // parent to child travel
+        
+        let parentt = document.getElementsByTagName("ul")
+        // let childd = parentt.f
+        let childd = parentt[0]
+        // let childd = parentt[1]
+        console.log(childd);
+
+    </script>
+</body>
+</html>

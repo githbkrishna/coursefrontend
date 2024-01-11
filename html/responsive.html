@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a  site responsive without media queries</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+body{
+        height: 100vh;
+        background:linear-gradient(120deg,green,teal)
+    }
+
+.container{
+        background-color: #fdd324;
+        width: 72%;
+        min-width: 420px;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top:50%;
+        left:50%;
+        border-radius:12px;
+        box-shadow: 20px,20px,20px,rgba(1,1,1,0.5);
+
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        position: relative;
+        margin: auto;
+        width:100%;
+        text-align: center;
+        font-size: larger;
+        color:#bbbb;
+        opacity: 0.5;
+        font-weight: 400;
+    }
+    form{
+width: 100%;
+position: relative;
+margin:20px AUTO 0px auto; 
+    }
+
+    .row{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+         grid-gap: 30px 30px;
+
+    }
+    label{
+        color:green;
+        font-size: larger;
+
+        }
+    textarea,input{
+        width:100%;
+        font-weight: 400;
+        padding:8px 10px;
+        border-radius: 5px;
+        border:1.2px solid white;
+        margin-top:5px;
+    }
+
+    textarea{
+        resize: none;
+    }
+    textarea:focus,
+    input:focus{
+        outline:none;
+        border-width: 2px;
+
+    border-style: dashed;
+        border-color: blueviolet;
+        transition: all 3s;
+        
+    }
+
+    button{
+border: none;
+padding: 10px 20px;
+margin: 20px;
+background:linear-gradient(130 deg,blue,teal);
+color: aqua;
+
+   };
+</style>
+<body>
+    <div class="container">
+<h1>Music Admission Form</h1>
+<p>Have any queries and suggestion drop us a message</p>
+<form>
+<div class="row">
+    
+  <div class="column">
+    <label for="name">Name:</label>
+   <input type="text" id="name" placeholder="Enter your name here">
+</div>
+
+<div class="column">
+    <label for="Email">Email</label>
+   <input type="Email" id="email" placeholder="Enter your email here">
+</div>
+
+    </div>
+    <div class="row">
+    <div class="column">
+        <label for="Subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter your Subject here">
+     </div>
+     <div class="column">
+        <label for="Contact">Contact</label>
+       <input type="TEL" id="CONTACT" placeholder="Enter your Phone number here">
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
+       <label for="issue">Describe your issue</label>
+       <textarea id="issue" placeholder="Describe your issue in details" rows="3"></textarea>
+    </div>
+</div>
+
+<button>SUBMIT</button>
+
+
+</form>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .main {
+        width: 100%;
+        height: 500px;
+        border: 2px solid red;
+      }
+      .main .head{
+        width: 30%;
+        height: 200px;
+        display: inline-block;
+        margin: 15px;
+        position: relative;
+        transition: all 3s;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .main .head .show {
+        width: 100%;
+        height: 100%;
+      }
+      .main .head .show img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .main .head .hide {
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+        border-radius: 10px 10px 0 0;
+        position: absolute;
+        bottom: -100%;
+        text-align: start;
+      }
+      .main .head .hide ul{
+        text-align: end;
+      }
+      .main .head .hide li{
+        list-style: none;
+        display: inline;
+      }
+      .head:hover .hide{
+        bottom: 0;
+        transition: all 3s;
+    }
+    .head:hover{
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="show">
+          <img src="../image/ice.jpg" alt="" />
+        </div>
+        <div class="hide">
+          <h2>Namaste</h2>
+          <p>Lorem ipsum dolor sit.</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

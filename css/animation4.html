@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000000;
+        }
+        h1{
+            font-size: 50px;
+            letter-spacing: 15px;
+            margin-left: 100px;
+            color: white;
+            display: inline-block;
+
+            background-image: linear-gradient(red, green, yellow);
+            color: transparent;
+            -webkit-background-clip: text;
+
+            animation-name: slide;
+            animation-duration: 14s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            background-repeat: no-repeat;
+            background-position: -250px;
+        }
+        @keyframes slide {
+            100%{
+                background-position: 0;  
+            }
+        }
+
+        .first{
+            position: relative;
+        }
+        
+        .second{
+            position: absolute;
+            top: 0;
+            left: 45px;
+        }
+        .second .two{
+            position: absolute;
+            top: 0;
+            left: 65px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>H l o w r d</h1>
+    </div>
+    <div class="second">
+        <h1><span class="one"> e l  </span>  <span class="two">o l </span></h1>
+    </div>
+</body>
+</html>

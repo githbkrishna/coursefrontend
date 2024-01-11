@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        color: rgb(238, 0, 0);
+        position: relative;
+        /* background-color: black; */
+      }
+      .one h1{
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        background-image: linear-gradient(red, green, blue);
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+
+        letter-spacing: 10px;
+      }
+      .two h1{
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        background-image: linear-gradient(yellow, rgb(113, 0, 128), rgb(0, 255, 238));
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+
+        letter-spacing: 10px;
+      }
+      .three h1{
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        background-image: linear-gradient(rgb(0, 255, 21), rgb(90, 42, 179),rgb(255, 0, 0));
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+
+        letter-spacing: 10px;
+      }
+      .two h1 {
+        position: absolute;
+        top: 0px;
+        left: 31px;
+      }
+      .three h1 {
+        position: absolute;
+        top: 0px;
+        left: 185px;
+      }
+      h1 {
+        animation-name: slide;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        background-position: -300px;
+        background-repeat: no-repeat;
+        animation-direction: alternate;
+        transition: all 3s;
+      }
+      @keyframes slide {
+        100% {
+          background-position: 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one">
+        <h1>h  l   o   w  r   d</h1>
+        <!-- <h1>h l o w r d</h1>
+        <h1> e l   o l </h1> -->
+      </div>
+      <div class="two">
+        <h1>  e  l            </h1>
+      </div>
+      <div class="three">
+        <h1>             o  l </h1>
+      </div>
+    </div>
+  </body>
+</html>

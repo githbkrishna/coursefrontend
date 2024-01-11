@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    *{
+      margin: 0;
+      /* padding: 0; */
+    }
+    div{
+      width: 100%;
+      height: 100vh;
+    }
+    ul{
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: #46999f;
+    }
+    li{
+      list-style-type: none;
+    }
+    li a{
+      text-decoration: none;
+      color: rgb(228, 228, 237);
+      font-size: 2em;
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+    video{
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+    }
+    div h3{
+      display: flex;
+      align-items: center;
+      top: 100px;
+    }
+    </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <video loop muted autoplay src="./video/temple.mp4"></video>
+    <h3>welcom to the indian Marvel</h3>
+  </div>
+</body>
+</html>
