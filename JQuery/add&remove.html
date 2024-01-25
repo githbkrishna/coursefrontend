@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add & remove</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .abc{
+            height: 200px;
+            width: 200px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <h1>hello</h1>
+    </div>
+
+    <button class="btn">CLICK</button>
+
+    <script>
+
+        // $(".btn").click(function () {
+        //     $(".abc").append("<h1>bye</h1>")
+        // })
+
+        // $(".btn").click(function () {
+        //     $(".abc").prepend("<h1>bye</h1>")
+        // })
+
+        // // appendTo()
+        // $(".btn").click(function () {
+        //     $("<h1>appendTo</h1>").appendTo(".abc")
+        // })
+
+        // // PrependTo()
+        // $(".btn").click(function () {
+        //     $("<h1>prependTo</h1>").prependTo(".abc")
+        // })
+
+        // // after()
+        // $(".btn").click(function () {
+        //     $(".abc").after("<h1>after div</h1>")
+        // })
+
+        // // before()
+        // $(".btn").click(function () {
+        //     $(".abc").before("<h1>before div</h1>")
+        // })
+
+        // empty()
+        // $(".btn").click(function () {
+        //     $(".abc").empty()
+        // })
+
+        // // remove()
+        // $(".btn").click(function () {
+        //     $(".abc").remove()
+        // })
+
+        // clone()
+        $(".btn").click(function () {
+            $(".abc").clone().prependTo("body")
+        })
+
+    </script>
+</body>
+</html>

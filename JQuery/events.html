@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- if script is in head tag then document.ready will run the code when the webpage loaded syccesfully --> -->
+    <!-- <script>
+      $(document).ready(function () {
+          $("#abc").css("color","red")
+      })
+    </script> -->
+
+    <style>
+        h1, button{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1 id="abc">hello world</h1>
+    
+    <input type="text" id="inp">
+
+    <button id="xyz">click</button>
+
+    <script>
+
+        // $(document).ready()
+        // if script is in head tag then document.ready will run the code when the webpage loaded syccesfully -->
+        // $(document).ready(function () {
+        //   $("#abc").css("color","red")
+        // })
+
+        // click()
+        // $("#abc").click(function () {
+        //     $("#abc").css("color","red")
+        // })
+        
+        // dblclick()
+        // $("#abc").dblclick(function () {
+        //     $(this).css("color","blue")
+        // })
+
+        // Mouse Events()
+        // mousedown()
+        // using camelCase when there is (-) between property
+        // $("#abc").mousedown(function () {
+        //     $(this).css({
+        //         backgroundColor : "red",
+        //         color: "white"
+        //     })
+        // })
+
+        // mouseleave()
+        // $("#abc").mouseleave(function () {
+        //     $(this).css({
+        //         color: "green"
+        //     })
+        // })
+
+        // // mouseenter()
+        // $("#abc").mouseenter(function () {
+        //     $(this).css({
+        //         color: "cyan"
+        //     })
+        // })
+
+        // // $(this).mousemove(function () {
+        // $("#abc").mousemove(function () {
+        //     // console.log("move");
+        //     $(this).css({
+        //         "backgroundColor": "darkgray"
+        //     })
+        // })
+
+        // hover()
+        // combination of the mouseenter() and mouseleave() methods
+        // $("#abc").hover(function () {
+        //     $(this).css("color","green")
+        // },function () {
+        //     $(this).css("backgroundColor","red")
+        // })
+
+        // focus()
+        // $("#inp").focus(function () {
+        //     $(this).css({
+        //         "borderColor":"red",
+        //         "backgroundColor": "darkgray"
+        //     })
+        // })
+
+        // blur()
+        // $("#inp").blur(function () {
+        //     $(this).css({
+        //         "borderColor":"yellow",
+        //         "backgroundColor": "green"
+        //     })
+        // })
+
+        // on() Method
+        // $("#abc").on({
+        //     mouseenter: function () {
+        //         // console.log(this);
+        //         $(this).css({
+        //             "color":"yellow",
+        //             "backgroundColor": "green"
+        //         })
+        //     },
+        //     mouseleave: function () {
+        //         $(this).css({
+        //             "color":"black",
+        //             "backgroundColor": "red"
+        //         })
+        //     }
+        // })
+
+        // KeyBoardEvents
+        // keydown()
+        // $("#inp").keydown(function () {
+        //     $(this).css({
+        //         "backgroundColor": "red"
+        //     })
+        // })
+        
+        // // keypress()
+        // $("#inp").keypress(function () {
+        //     $(this).css({
+        //         "backgroundColor": "green"
+        //     })
+        // })
+        
+        // // keyup()
+        // $("#inp").keyup(function () {
+        //     $(this).css({
+        //         "backgroundColor": "blue"
+        //     })
+        // })
+
+        // // keyup()
+        // $("body").keyup(function (e) {
+        //     console.log(e.key);
+        // })
+
+        // // keypress()
+        // capslock, shift , enter will not print on console
+        // $("body").keypress(function (e) {
+        //     console.log(e.key);
+        // })
+
+        // keydown()
+        // we can print capslock, shift , enter in console
+        // $("body").keydown(function (e) {
+        //     console.log(e.key);
+        // })
+      
+        // $(document).keydown(function (e) {
+        //     // console.log(e.key);
+        //     if (e.key == "Shift") {
+        //         console.log("shift pressed");
+        //     } else {
+        //         console.log("other key pressed");
+        //     }
+        // })
+
+    </script>
+
+</body>
+</html>

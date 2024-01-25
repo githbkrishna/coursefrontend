@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capcha</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      html , body{
+          height: 100%;
+          width: 100%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      section{
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to right, rgb(13, 202, 108), rgb(6, 93, 207));
+        padding: 40px;  
+      }
+      form{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 5px 2px;
+        padding: 20px 25px;
+        /* width: 250px; */
+      }
+      h3{
+        color: rgb(0, 68, 255);
+        color: black;
+      }
+      label{
+        color: #fff;
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      input{
+        border-radius: 2px;
+        padding: 10px;
+      }
+      input:focus{
+        border-color: aqua;
+      }
+      input::placeholder{
+        color: black;
+        text-transform: capitalize;
+      }
+      div {
+        margin: 10px 0;
+      }
+      .refresh {
+        border: 1px solid black;
+        display: inline-block;
+        padding: 5px;
+        color: #ffffff;
+        background-color: black;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      #show {
+        display: none;
+      }
+      #submit{
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <h3>Capcha, form validation</h3>
+        <div>
+          <label for="user">username</label>
+          <input type="text" id="user" placeholder="enter name"/>
+        </div>
+        <div>
+          <label for="pass">password</label>
+          <input type="password" id="pass" placeholder="enter password"/>
+
+          <span onclick="hidenseek()">
+            <i class="fa-solid fa-eye" id="hide"></i>
+            <i class="fa-solid fa-eye-slash" id="show"></i>
+          </span>
+        </div>
+        <div class="output"></div>
+        <input type="text" class="inp" placeholder="enter capcha" id="inp" />
+        <br />
+        <div class="refresh" onclick="generatecode()">refresh</div>
+        <div class="res"></div>
+
+        <!-- <div onclick="check()">submit</div> -->
+        <input type="submit" id="submit" />
+      </form>
+    </section>
+
+    <script>
+      let username = "abc";
+      let password = 123;
+
+      function hidenseek() {
+        if (pass.type == "password") {
+          pass.type = "text";
+          hide.style.display = "none";
+          show.style.display = "inline-block";
+        } else {
+          pass.type = "password";
+          show.style.display = "none";
+          hide.style.display = "inline-block";
+        }
+      }
+
+      function generatecode() {
+        const char =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        // console.log(char.length);
+
+        let capchalength = 4;
+
+        let finalcode = "";
+
+        for (let i = 0; i < capchalength; i++) {
+          let capchaindex = Math.floor(Math.random() * char.length);
+
+          finalcode += char.charAt(capchaindex);
+          // finalcode = finalcode + char.charAt(capchaindex)
+
+          console.log(finalcode);
+        }
+
+        document.querySelector(".output").textContent = finalcode;
+      }
+      generatecode();
+
+      // function check() {
+      //     // event.preventDefault()
+
+      //     let users = document.getElementById("user").value
+      //     let passs = document.getElementById("pass").value
+
+      //     let outchk = document.querySelector(".output").textContent
+      //     let inchk = document.querySelector("#inp").value
+
+      //     if (username == users && password == passs && outchk == inchk) {
+
+      //         swal({
+      //             title: "user logged in!",
+      //             text: "You clicked the button!",
+      //             icon: "success",
+      //         });
+
+      //         document.querySelector(".res").textContent= "matched succes"
+
+      //     } else {
+
+      //         swal({
+      //             title: "login failed!",
+      //             text: "You clicked the button!",
+      //             icon: "warning",
+      //         });
+
+      //         document.querySelector(".res").textContent= "matching failed"
+      //     }
+      // }
+
+      let submitt = document.getElementById("submit");
+
+      submitt.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let users = document.getElementById("user").value;
+        let passs = document.getElementById("pass").value;
+
+        let outchk = document.querySelector(".output").textContent;
+        let inchk = document.querySelector("#inp").value;
+
+        if (username == users && password == passs && outchk == inchk) {
+          swal({
+            title: "user logged in!",
+            text: "You clicked the button!",
+            icon: "success",
+          });
+
+          document.querySelector(".res").textContent = "matched succes";
+        } else {
+          swal({
+            title: "login failed!",
+            text: "You clicked the button!",
+            icon: "warning",
+          });
+
+          document.querySelector(".res").textContent = "matching failed";
+        }
+      });
+    </script>
+  </body>
+</html>

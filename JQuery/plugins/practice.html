@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lax js</title>
+    <!-- <script src="path-to-lax.min.js" type="text/html"></script> -->
+    <!-- or via CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js@2.0.3/lib/lax.min.js"></script>
+    <style>
+        .selector{
+            font-size: 2rem;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="selector lax lax_preset_fadeIn:50:100 lax_preset_spin">Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab ratione doloremque. Sunt, cum laboriosam? Iste voluptas itaque nemo fugiat magni quas dolorum. Iusto cum architecto vero nobis ea. Quod numquam voluptate quisquam dolor sequi placeat velit dignissimos libero? Itaque, excepturi consequuntur nisi, non explicabo omnis iusto necessitatibus ratione labore error pariatur maxime hic cupiditate natus culpa quis sapiente cum delectus odit magnam obcaecati reiciendis! Natus sit inventore excepturi minus optio quo dolor molestias, eaque doloremque architecto laboriosam deserunt ex aspernatur id corrupti cum accusamus recusandae amet! Consequuntur necessitatibus, fugit repudiandae laborum mollitia similique ex, ratione iste quos, saepe amet explicabo repellat unde nulla dolor natus blanditiis deleniti voluptatem minus ut porro beatae voluptatum corporis nihil. Ab repellendus nobis assumenda natus reprehenderit, consequuntur qui nemo ipsam, tempore optio architecto quidem consectetur. Fugit voluptas ducimus, et maxime nulla est molestiae perferendis unde enim temporibus modi vero quas, recusandae, eos veniam dolor quisquam corrupti nostrum aut. Doloribus dolorum itaque minus commodi! Excepturi hic quidem est ratione consequuntur maxime sed, neque laudantium aspernatur dolor perferendis consectetur nesciunt dolores rerum quisquam distinctio laboriosam? At odit quo reprehenderit quibusdam similique assumenda corporis? Quis similique sint ex excepturi. Quaerat maiores nihil eos vitae officia sit sapiente minus cum? Vero sit perferendis id provident laborum minus ducimus suscipit esse debitis veritatis accusantium omnis pariatur consequatur natus quis, fugiat voluptatibus possimus sed neque? Incidunt, quam fugit necessitatibus amet ducimus aspernatur? Minima dolor ipsa animi voluptatum! Quod consequuntur explicabo earum distinctio. Minus autem non exercitationem quo ipsa suscipit ad fugit distinctio architecto voluptatum repellendus deleniti quisquam corporis qui sint, tempore libero error omnis earum similique, optio magnam quidem. Magnam eius enim soluta placeat tempore reprehenderit ipsam ratione pariatur minima impedit atque velit architecto deleniti modi minus, culpa odio distinctio ipsum consectetur nulla veniam nesciunt aspernatur quod molestiae. Eos, voluptatum repudiandae! Nulla iusto ab quod provident consectetur. Excepturi similique qui culpa dolor consequatur architecto, repudiandae maxime laboriosam soluta sit nulla dolore, quisquam nostrum ipsa non eum dolorem temporibus. Cupiditate eos hic nam voluptate magnam maiores tempora praesentium ipsa perspiciatis, assumenda recusandae architecto doloremque culpa provident error maxime, cum neque ducimus ratione! Voluptate molestias quas sapiente facilis, labore deserunt natus. Repellat earum asperiores officiis eius? Aliquid possimus sit nostrum repellendus nobis expedita fuga labore obcaecati consectetur, necessitatibus veritatis aut molestiae dolore vel consequuntur quisquam magni. Dicta quisquam corrupti dolorum, ratione similique saepe, quasi voluptate dolor quidem in obcaecati perferendis voluptatem ducimus sit corporis nam, non accusantium inventore molestiae eos! Officiis veniam dolorum repellendus ut, nulla, quasi beatae expedita laudantium possimus earum at voluptas corrupti commodi vero dolore iste aliquam reiciendis eius. Repellat quos doloremque numquam dicta laudantium in, necessitatibus modi sit dolore quia soluta animi voluptatem saepe reprehenderit ipsam! Labore necessitatibus dolorem fugiat aperiam? Reprehenderit libero provident accusamus numquam nam consequatur, earum iure exercitationem nulla itaque ducimus voluptate expedita, aut assumenda necessitatibus tempora minima rerum incidunt delectus sequi cumque quae est repellat natus. Architecto deleniti placeat odit eum alias illum dolores, cum vitae, eveniet laudantium atque, molestiae repellat pariatur soluta commodi excepturi voluptates. Optio adipisci porro qui voluptas! Expedita sit sunt ab voluptatum. Tempora quaerat ipsa ex harum ullam enim tempore! Perspiciatis ullam accusantium ab minima optio non soluta quisquam, id repellat voluptatibus, expedita consequatur voluptatum voluptate in amet eligendi? Necessitatibus harum ratione nam voluptatem nostrum iusto pariatur ullam quasi tempora, dolor ut vel sequi maiores alias quis nisi eum culpa dolorem ad assumenda quisquam doloremque possimus ipsum. Ipsum nostrum culpa voluptate debitis ut, laboriosam voluptas adipisci nesciunt earum quod eos maxime dicta. Deserunt est dolorem expedita obcaecati magni repellat! Id quae doloribus reiciendis illo veniam, excepturi fugit minima! Laboriosam, odio?</div>
+
+    <!-- JS -->
+    <script>
+        window.onload = function () {
+        lax.init()
+    
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+        
+            // Add animation bindings to elements
+            lax.addElements('.selector', {
+                scrollY: {
+                translateY: [
+                    ["elInY", "elCenterY", "elOutY"],
+                    [0, 'screenWidth/2', 'screenWidth'],
+                ]
+                }
+
+                
+                // scrollY: [
+                //     100,
+                //     0
+                // ]
+                
+            })
+        }
+    </script>
+</body>
+</html>

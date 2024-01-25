@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get & set</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!-- set value  -->
+    <p class="para">Lorem <span>HTML</span> ipsum dolor sit amet consectetur adipisicing elit. Labore iure est alias quis molestiae enim hic! Sit odio culpa facilis et explicabo.</p>
+    <h2 class="head" id="headId">hello world</h2>
+    <button class="btn">set</button>
+
+    <br><br><br>
+
+    <!-- get value  -->
+    <form action="" id="formsub">
+        <input type="text" id="inp">
+        <input type="submit" id="submit">
+        <!-- console will show but only for a while then page will be refresh because form input type submit. -->
+    </form>
+
+    <script>
+
+        // set value 
+        // $(".head").html("bye bye world")
+
+        // $(".btn").click(function () {
+        //     // $(".head").html("bye world")
+        //     $(".head").text("bye world")
+        // })
+        
+        // get id
+        // // attr('attribute name ')
+        // $(".btn").click(function () {
+        //     let res = $(".head").attr("id")
+        //     console.log(res);
+        // })
+        
+        // get class 
+        // $(".btn").click(function () {
+        //     let res = $("#headId").attr("class")
+        //     console.log(res);
+        // })
+        
+        // update attribute 
+        $(".btn").click(function () {
+            let res = $(".head").attr("class","heading")
+            console.log(res);
+        })
+
+        // get value 
+        // $("#submit").click(function () {
+        //     let result = $("#inp").val()
+        //     // alert(result)
+        //     // alert will be shown 
+        //     console.log(result);
+        //     // console will show but only for a while 
+        // })
+    
+        // $("#formsub").click(function () {
+        //     let result = $("#inp").val()
+        //     alert(result) 
+        //     // console.log(result);
+        //     // form submit will give empty value / error will refresh the page 
+        // })
+
+        // $("#submit").submit(function (e) {
+        //     e.preventDefault()
+        //     let result = $("#inp").val()
+        //     console.log(result);
+        // })
+
+        // $("#formsub").submit(function (e) {
+        //     e.preventDefault()
+        //     let result = $("#inp").val()
+        //     console.log(result);
+        // })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide & show, Fade</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+    <div class="abc">    
+        <h2>hello world</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nesciunt ad cumque aut. Inventore veritatis dignissimos provident commodi dolor asperiores, quia, quidem ea modi, officiis repellendus temporibus animi perferendis quae unde accusamus iusto nostrum nulla! Odio illo sit beatae error distinctio, voluptatibus sint saepe officiis quis reiciendis quasi dicta necessitatibus vero consequuntur incidunt autem dolore quae eligendi non qui quisquam. Suscipit cupiditate, facere voluptatum adipisci ab voluptate officia ut quia aperiam molestias! Labore, fugit expedita recusandae explicabo repellendus dolore saepe atque? Tempore quibusdam, libero minima modi ullam vel voluptatum provident ut, iste distinctio alias sed quia. Error laboriosam impedit sint.</p>
+    </div>
+    
+    <!-- <button class="hide">hide</button>
+    <button class="show">show</button>
+    <button class="toggle">toggle</button> -->
+
+    <!-- <button class="fadeout">fadeout</button>
+    <button class="fadein">fadein</button>
+    <button class="fadetoggle">fadetoggle</button>
+    <button class="fadeto">fadeto</button> -->
+
+    <button class="slideup">slideup</button>
+    <button class="slidedown">slidedown</button>
+    <button class="slidetoggle">slidetoggle</button>
+
+    <script>
+
+        // hide() & show()
+        // takes time & function
+
+        // $(".hide").click(function () {
+            // $(".abc").hide()
+            // $(".abc").hide(1000)
+            // $(".abc").hide(1000, function () {
+            //     alert("hide")
+            // })
+        // })
+
+        // $(".show").click(function () {
+        //     // $(".abc").show()
+        //     $(".abc").show(1000)
+        // })
+
+        // $(".toggle").click(function () {
+        //     // $(".abc").toggle()
+        //     $(".abc").toggle(2000)
+        // })
+
+
+
+        // fade
+        // in, out, toggle & To
+        // {"fadeTo"} takes time, opacity & function
+
+        // $(".fadein").click(function () {
+        //     // console.log("fadein");
+        //         $(".abc").fadeIn(1000)
+        //     }
+        // )
+        
+        // $(".fadeout").click(function () {
+        //         $(".abc").fadeOut(1000)
+        //     }
+        // )
+        
+        // $(".fadetoggle").click(function () {
+        //         $(".abc").fadeToggle(1000)
+        //     }
+        // )
+        
+        // $(".fadeto").click(function () {
+        //         $(".abc").fadeTo(500,0.3)
+        //     }
+
+        //     // $(".abc").fadeTo(500,0.5,function () {
+        //     //         console.log("fade to");
+        //     //     })
+        //     // }
+
+        // )
+
+        // slide 
+        // down, up, toggle
+        $(".slideup").click(function () {
+            $(".abc").slideUp(1000)
+        })
+
+        $(".slidedown").click(function () {
+            $(".abc").slideDown(1000)
+        })
+        
+        $(".slidetoggle").click(function () {
+            $(".abc").slideToggle(1000)
+        })
+
+
+
+    </script>
+
+</body>
+</html>

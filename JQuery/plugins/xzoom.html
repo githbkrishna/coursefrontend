@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xzoom</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.js" integrity="sha512-kKt0oznSOD4MQo2nWJDWggE968N4Bvwn1VRr0RfMx1ozdC2FLCVLJDuHoeMfbWZU/F50yANpekr6dNTVfaLKdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.css" integrity="sha512-Y58ai8uVim58rsa9pEXJK/fyyFHkbZp6yluEAxAC0iTKyuhAkvUQlkXRRCEyZdLDTnc3cSVF9f/EhB+fThhTNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .xzoom{
+            height: 400px;
+        }
+        .xzoom-gallery{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img class="xzoom" id="main_image" src="https://images.pexels.com/photos/3766113/pexels-photo-3766113.jpeg?auto=compress&cs=tinysrgb&w=400">
+
+    <br>
+
+    <a href="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=400">
+    </a>
+
+    <a href="https://images.pexels.com/photos/9979199/pexels-photo-9979199.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/9979199/pexels-photo-9979199.jpeg?auto=compress&cs=tinysrgb&w=400">
+    </a>
+
+    <a href="https://images.pexels.com/photos/9978709/pexels-photo-9978709.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/9978709/pexels-photo-9978709.jpeg?auto=compress&cs=tinysrgb&w=400">
+    </a>
+
+    <a href="https://images.pexels.com/photos/3766113/pexels-photo-3766113.jpeg?auto=compress&cs=tinysrgb&w=400">
+        <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/3766113/pexels-photo-3766113.jpeg?auto=compress&cs=tinysrgb&w=400">
+    </a>
+
+    <script>
+        $(".xzoom, .xzoom-gallery").xzoom({
+            // position:"lens",
+            // mposition:"fullscreen",
+            // lens:"true",
+            lensShape:"circle",
+            zoomWidth:100,
+            zoomHeight:100,
+        });
+    </script>
+
+</body>
+</html>

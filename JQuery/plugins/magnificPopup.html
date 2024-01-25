@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>magnific popup</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+      integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container{          
+        height: 100vh;
+        padding-top: 10px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        width: 10%;
+        height: 5px;
+        background-color: black;
+        border-radius: 5px;
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        left: 45%;
+      }
+      section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 260px 260px;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Galarry</h2>
+      <section class="parent-container">
+        <div class="child">
+          <a href="../../image/bird.jpg" path>
+            <img src="../../image/bird.jpg" alt="" />
+          </a>
+        </div>
+        <div class="child">
+          <a href="../../image/sparrow.jpg">
+            <img src="../../image/sparrow.jpg" alt="" />
+          </a>
+        </div>
+        <div class="child">
+          <a href="../../image/diving.jpg">
+            <img src="../../image/diving.jpg" alt="" />
+          </a>
+        </div>
+        <div class="child">
+          <a href="../../image/field.jpg">
+            <img src="../../image/field.jpg" alt="" />
+          </a>
+        </div>
+        <div class="child">
+          <a href="../../image/ice.jpg">
+            <img src="../../image/ice.jpg" alt="" />
+          </a>
+        </div>
+        <div class="child">
+          <a href="../../image/leaf1.jpg">
+            <img src="../../image/leaf1.jpg" alt="" />
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      $(".parent-container").magnificPopup({
+        delegate: "a",
+        type: "image",
+        gallery: { enabled: true },
+      });
+    </script>
+  </body>
+</html>
